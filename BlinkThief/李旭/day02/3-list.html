@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>列表</title>
+    <style> 
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    /*flex 容器，项目*/
+    ul{
+        display: flex;
+        /*去掉项目标号*/
+        list-style: none;
+    }
+    /* li{
+        width: 200px;
+    } */
+    /* li:first-child{
+        flex: 200px 1;
+    } */
+    li{
+        flex: 200px 1;
+        text-align: center;
+        cursor: pointer;
+    }
+    /*光标悬停给li设置样式*/
+    li:hover{
+        background: teal;
+        color: white;
+    }
+    </style>
+</head>
+<body>
+    
+    <!-- <ul>
+        <li>hello</li>
+        <li>hello</li>
+        <li>hello</li>
+    </ul>
+    <ol>
+        <li>hello</li>
+        <li>hello</li>
+        <li>hello</li>
+    </ol> -->
+    <!--弹性盒布局-->
+    
+    <ul>
+            <li>hello</li>
+            <li>hello</li>
+            <li>hello</li>
+    </ul>
+</body>
+</html>

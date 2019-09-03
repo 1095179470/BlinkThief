@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>table表格</title>
+    <style>
+        /* css代码 */
+        table,
+        td,
+        th{
+            /* 边框 */
+            border:1px solid red;
+        }
+        table{
+            width:400px;
+            /* 合并边框*/
+            border-collapse:
+            collapse;
+            color: coral;
+            font-size: 30px;
+            /*鼠标：手型-光标 一般是点击的意思*/
+            cursor: pointer;
+        }
+
+        td{
+            /*水平居中*/
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>
+                编号
+            </th>
+            <th>
+                姓名
+            </th>
+            <th>
+                性别
+            </th>
+        </tr>
+        <tr>
+            <td>1001</td>
+            <td>张三</td>
+            <td>男</td>
+        </tr>
+        <tr>
+            <td>1001</td>
+            <td>张三</td>
+            <td>男</td>
+        </tr>
+        <tr>
+            <td>1001</td>
+            <td>张三</td>
+            <td>男</td>
+        </tr>
+        <tr style="height: 100px">
+            <td>1001</td>
+            <td style="widows: 400px;">张三</td>
+            <td>男</td>
+        </tr>
+    </table>
+</body>
+</html>
