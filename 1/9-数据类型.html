@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>数据类型</title>
+    <script>
+      // number
+      console.log(12);
+      // string
+      console.log("hello");
+      // boolean  布尔
+      var a = true;
+      console.log(a);
+      // null
+      var b = null;
+      console.log(null);
+      // undefined
+      var c;
+      console.log(c);      //undefined
+      //console.log(d);
+      // d is not defined
+      // 引用数据类型
+      var obj = {
+          name:"zhangsan",
+          age:12
+      };
+      console.log(obj);
+
+      //数据
+      let arr = [1,'hello',true,
+    {name:'zhangsan'},[1,2,3]];
+      console.log(arr);
+      // 函数  a，b形参
+      function test(a,b){
+          console.log(1);
+          console.log(2);
+          console.log(3);
+          //this指向函数的调用者
+          console.log(this);
+      }
+      // 函数的运行
+      test();
+
+
+      //对象内方法
+      let obj2 ={
+          name:'lisi',
+          age:12,
+          gender:'男',
+          test:function(){
+              console.log(11);
+              console.log(this);
+              //函数的返回值
+              return 100;
+          }
+      };
+      //属性的访问
+      console.log(obj2.name);
+      console.log(obj2['name']);
+      //方法的访问
+      obj2.test();
+      console.log(obj2.test());
+
+      //函数作为返回值存在
+      function test2(a, b){
+          console.log(a, b);
+          //arguments实参类数组对象
+          console.log(arguments);
+          console.log(arguments[1]);
+          return function(){
+              console.log(200);
+
+          }
+      }
+      //test2()();
+      //1, 2是实参
+      console.log(test2(1,2,3,4,5)());
+
+      /*function test3(){}
+      // var test3 = function(){}
+      console.log(test3());*/
+
+      console.log([100,200,300][1]);
+      //数据类型自动转换
+      console.log(1+true); //2
+      console.log(1+'true'); //1true
+      console.log(1+'1'); //11
+
+
+      </script>
+</head>
+<body>
+    
+</body>
+</html>

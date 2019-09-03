@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+    /*行内元素不可设置宽高，如果设置了宽高，无效*/
+    /*块级元素可设置宽高*/
+    /*行内元素不可设置宽高，如果设置了宽高，无效*/
+    span,div{
+        width:120px;
+        height:100px;
+    }
+
+    span{
+        /*display :block;*/
+        display: inline-block;
+    }
+
+    /*盒子模型*/
+    /*content padding border margin*/
+    div {
+        background-color: teal;
+        border:1px solid crimson;
+        /*padding: 10px;*/
+        /*padding: 10px 20px;*/
+        /*padding: 10px 20px 30px;*/
+        /*padding: 10px 20px 30px 40px;*/
+    }
+
+    .one{
+        margin: 10px;
+    }
+    </style>
+</head>
+<body>
+    <!--行内元素和块级元素-->
+    <span>纯粹的行内元素</span>
+    <span>纯粹的行内元素</span>
+    <div class=“one”>纯粹的行内元素</div>
+    <div>纯粹的行内元素</div>
+</body>
+
+</html> 
