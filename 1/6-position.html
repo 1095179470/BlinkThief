@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>position-绝对定位</title>
+    <style>
+    /*
+    1.
+    2.
+    */
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .parent{
+        /*相对定位*/
+        position: relative;
+        width:200px;
+        height: 200px;
+        background-color: cyan;
+        margin: 100px;
+    }
+
+    .child{
+        width: 100px;
+        height: 100px;
+        background-color: coral;
+        /*绝对定位*/
+        position: absolute;
+        left:10px;
+        top:10px;
+
+    }
+    </style>
+</head>
+<body>
+    <div class="parent">
+    <div class="child"></div>
+    </div>
+</body>
+</html>
