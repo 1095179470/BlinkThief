@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <script>
+      //监听input的change事件
+      //页面加载完毕
+      window.onload = function() {
+        let input = document.getElementById("input");
+        let select = document.getElementById("select");
+        //事件处理程序  event事件对象
+        // target属性-- > 触发事件的元素;
+        //onblur是失焦事件
+        //onfocus是聚焦事件
+        input.onchange = function(event) {
+          //event.target==>input
+          console.log(event.target.value);
+        };
+        // select.onchange = function(event) {
+        //  console.log(event.target);
+        //   console.log(event.target.value);
+        // };
+        select.onchange = event => {
+          console.log(event.target);
+          console.log(event.target.value);
+        };
+      };
+    </script>
+  </head>
+  <body>
+    <!--change事件 当表单控件的值发生更改的时候触发的change事件-->
+    <input type="text" id="input" />
+    <select name="" id="select">
+      <option value="shanghai">上海</option>
+      <option value="liuzhou">柳州</option>
+    </select>
+  </body>
+</html>
