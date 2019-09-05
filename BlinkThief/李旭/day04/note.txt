@@ -1,0 +1,79 @@
+React基础知识
+  脚手架创建项目
+组件
+  函数组件
+    import React from 'react'
+    function MyIf(props){
+      const msg='hello react';
+      return(
+        <div>hello {msg}</div>
+      );
+    }
+    类组件
+    import React from 'react'
+    Class MyClass extends
+    React.Component{
+      constructor(props){
+        super(props);
+      }
+      render(){
+        const msg='hello react';
+      return(
+        <div>hello {msg}</div>
+      );
+      }
+    }
+
+1.ES6中的解构 模式匹配
+  let{name}={name:'zhangsan'}
+  let name={name:'zhangsan'}.name
+  let [a,b,c]=[1,2,3]
+  let a=1;
+  let b=1;
+  let c=1;
+
+  //解构的应用
+  import React,{Component} from 'react';
+  class MyClass extends Component{} 
+   
+2.ES6中对象的扩展,函数的扩展
+  let name ='zhangsan';
+  let age =12;
+  let gender ='男'
+  let obj={//对象内部
+    name:name,
+    age:age,
+    gender:gender
+    sayName(){}//对象内部写方法
+  };
+
+  let test=(name,age)=>{
+
+  }
+  test({name:"zhangsan",age:12});
+  let test1=([a,b,c])=>{
+
+  }
+  test1([1,2,3]);
+  let [a,b,c]=[1,2,3];
+  function test(a,b){}
+  test(1,2);
+
+  let defaultFun=(a=10,b=20)=>{
+
+  }
+defaultFun(1);
+3.类组件的状态
+  state状态管理
+  state={
+
+  }；
+  render(){
+    const name='';
+    return();
+  }
+4.扩展运算符 ...
+5.条件渲染，列表渲染
+6.事件绑定
+
+7.组件的生命周期
