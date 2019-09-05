@@ -1,0 +1,54 @@
+JS
+ECMAScript
+数据类型，对象，数组，函数
+DOM
+对文档节点的操作
+div
+input
+<input type="text">
+获取节点
+document.getElementById('')通过id属性的值获取元素
+document.getElementsByTagName('input'); 通过标签名获取元素
+document.getElementsByClassName('one'); 通过class属性的值来获取元素
+只有获取到DOM节点，然后才能进行事件的绑定和元素属性的获取。
+<input id="one" type="text" value="123">
+单选按钮值的获取比较复杂
+  1.获取单选按钮组
+    let genderInputs = document.getElementsByClassName('gender');
+    gender是一个类数组 genderInputs
+  2.过滤用户选中的单选按钮
+    需要通过DOM的checked属性去判断是否选中
+    过滤使用数组的filter方法
+    let genderArr = Array.from(genderInputs);
+    let result = genderArr.filter(function(item){
+      //item-->radio的input
+      return item.checked===true;
+    });
+    //result 就是过滤出来的用户选择的radio
+
+
+
+
+    /*
+    let arr = [1,2,3,4,5];
+    过滤出大于3的元素，返回新数组
+    let result = arr.filter(function(item,index,arr){
+      //item-->数组内的每一个元素
+      return item>3;
+    });
+    [4,5]
+    //[1,2,3,4,5]
+    let result = [];
+    for(let i=0;i<arr.length;i++){
+      console.log(arr[i]);
+      if(arr[i]>3){
+        //在数组的末尾添加一个元素
+        result.push(arr[i]);
+      }
+    }*/
+  3.获取对应的value值
+    result[0].value
+复选按钮值的获取比较复杂
+  
+
+BOM

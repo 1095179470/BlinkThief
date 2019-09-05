@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <script>
+      // let genderInputs = document.getElementsByTagName("gender");
+      // let genderArr = Array.from(genderInputs);
+      // let result = genderArr.filter(function(item) {
+      //   return item.checked === true;
+      // });
+      //generator函数
+      function* generator() {
+        console.log(1);
+        yield "helllo";
+        console.log(2);
+        yield "world";
+        console.log(3);
+        yield "!";
+        return "test";
+      }
+      let g = generator();
+      console.log(g);
+      g.next();
+    </script>
+  </head>
+  <body></body>
+</html>
